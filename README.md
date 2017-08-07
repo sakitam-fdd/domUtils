@@ -2,6 +2,8 @@
 
 [![Build Status](https://www.travis-ci.org/sakitam-fdd/domUtils.svg?branch=master)](https://www.travis-ci.org/sakitam-fdd/domUtils)
 
+[![NPM](https://nodei.co/npm/nature-dom-util.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nature-dom-util/)
+
 > 提供常见dom处理工具
 
 ## build
@@ -24,13 +26,13 @@ npm run build
 ### CDN
 
 ```bash
-https://unpkg.com/dom-utils@1.0.0/dist/DomUtils.js
-https://unpkg.com/dom-utils@1.0.0/dist/DomUtils.min.js
+https://unpkg.com/nature-dom-util@1.0.0/dist/DomUtils.js
+https://unpkg.com/nature-dom-util@1.0.0/dist/DomUtils.min.js
 ```
 
 ### NPM
 
 ```bash
-npm install dom-utils --save
-import DomUtils from 'dom-utils'
+npm install nature-dom-util --save
+import DomUtils from 'nature-dom-util'
 ```

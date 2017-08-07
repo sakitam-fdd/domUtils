@@ -5,5 +5,5 @@ cache:
     - node_modules
 install: npm install
 script:
-- npm run dev
-- npm run build
+- webpack --env build
+- webpack --progress --colors --env dev

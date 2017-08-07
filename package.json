@@ -1,5 +1,5 @@
 {
-  "name": "dom-utils",
+  "name": "nature-dom-util",
   "version": "1.0.0",
   "description": "dom",
   "main": "src/index.js",
