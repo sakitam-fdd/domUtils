@@ -1,5 +1,7 @@
 ## Dom处理工具
 
+[![Build Status](https://www.travis-ci.org/sakitam-fdd/domUtils.svg?branch=master)](https://www.travis-ci.org/sakitam-fdd/domUtils)
+
 > 提供常见dom处理工具
 
 ## build
