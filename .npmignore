@@ -1,6 +1,4 @@
-build/
 example/
-config/
 docs/
 node_modules/
 test/
