@@ -80,3 +80,18 @@ export const firstUpperToCase = (str) => {
 export const upperFirstChart = str => {
   return (str.replace(/( |^)[a-z]/g, (L) => L.toUpperCase()))
 }
+
+/**
+ * arrayRemove
+ * @param arr
+ * @param obj
+ * @returns {boolean}
+ */
+export const arrayRemove = (arr, obj) => {
+  let i = arr.indexOf(obj)
+  let found = i > -1
+  if (found) {
+    arr.splice(i, 1)
+  }
+  return found
+}

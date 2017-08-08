@@ -13,7 +13,7 @@
 ---
 
 ```bash
-git clone https://github.com/https://github.com/sakitam-fdd/domUtils.git
+git clone https://github.com/sakitam-fdd/domUtils.git
 npm install
 npm run dev
 npm run build

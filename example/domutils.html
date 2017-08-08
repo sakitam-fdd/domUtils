@@ -17,7 +17,19 @@
 <div class="map" id="map"></div>
 <script src="../dist/DomUtils.js"></script>
 <script type="text/javascript">
-  console.log(DomUtils.htmlUtils.get('map'))
+  var dom = DomUtils.htmlUtils.get('map')
+  console.log(dom)
+  var dragger_ = new DomUtils.PointerEventHandler(dom)
+
+  DomUtils.Events.listen(dragger_, DomUtils.EventType.POINTERDOWN, function (event) {
+    console.log(event)
+  })
+  DomUtils.Events.listen(dragger_, DomUtils.EventType.POINTERMOVE, function (event) {
+    console.log(event)
+  })
+  DomUtils.Events.listen(dragger_, DomUtils.EventType.POINTERUP, function (event) {
+    console.log(event)
+  })
 </script>
 </body>
 </html>

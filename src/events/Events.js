@@ -1,32 +1,4 @@
-import { stamp } from './utils'
-
-/**
- * 事件
- * @type {{CHANGE: string, CLICK: string, DBLCLICK: string, DRAGENTER: string, DRAGOVER: string, DROP: string, ERROR: string, KEYDOWN: string, KEYPRESS: string, LOAD: string, MOUSEDOWN: string, MOUSEMOVE: string, MOUSEOUT: string, MOUSEUP: string, MOUSEWHEEL: string, MSPOINTERDOWN: string, RESIZE: string, TOUCHSTART: string, TOUCHMOVE: string, TOUCHEND: string, WHEEL: string}}
- */
-export const eventType = {
-  CHANGE: 'change',
-  CLICK: 'click',
-  DBLCLICK: 'dblclick',
-  DRAGENTER: 'dragenter',
-  DRAGOVER: 'dragover',
-  DROP: 'drop',
-  ERROR: 'error',
-  KEYDOWN: 'keydown',
-  KEYPRESS: 'keypress',
-  LOAD: 'load',
-  MOUSEDOWN: 'mousedown',
-  MOUSEMOVE: 'mousemove',
-  MOUSEOUT: 'mouseout',
-  MOUSEUP: 'mouseup',
-  MOUSEWHEEL: 'mousewheel',
-  MSPOINTERDOWN: 'MSPointerDown',
-  RESIZE: 'resize',
-  TOUCHSTART: 'touchstart',
-  TOUCHMOVE: 'touchmove',
-  TOUCHEND: 'touchend',
-  WHEEL: 'wheel'
-}
+import { stamp } from '../utils/utils'
 
 /**
  * 绑定事件
