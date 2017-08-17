@@ -8,7 +8,7 @@ const env = require('yargs').argv.env // use --env with webpack 2
 let libraryName = 'DomUtils'
 
 const resolve = (dir) => {
-  return path.join(__dirname, '..', dir)
+  return path.join(__dirname, './', dir)
 }
 
 let plugins = [
@@ -49,13 +49,18 @@ const config = {
   module: {
     rules: [
       {
-        test: /(\.jsx|\.js)$/,
+        test: /(\.js)$/,
         enforce: 'pre',  // 在babel-loader对源码进行编译前进行lint的检查
-        loaders: [
-          'babel-loader',
-          'eslint-loader'
-        ],
-        exclude: /(node_modules|bower_components)/
+        loader: 'eslint-loader',
+        include: [resolve('src'), resolve('test')],
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {
+        test: /(\.js)$/,
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test')]
       }
     ]
   },
